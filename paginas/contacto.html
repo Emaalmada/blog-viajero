@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amigos de viaje</title>
-    <!--  link css -->
-    <link rel="stylesheet" href="../css/base.css">
     <!--bostrapp-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
      ">
+    <!--  link css -->
+    <link rel="stylesheet" href="../css/base.css">
+
     <!-- font awesome-->
     <script src="https://kit.fontawesome.com/53b2729a2e.js" crossorigin="anonymous"></script>
 
@@ -20,7 +21,7 @@
         <nav class="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="../imagenes/logo-img/logo.jpg" alt="">
+                    <img src="../imagenes/logo-img/logo.jpg" alt="Dos personas de espalda, con zapatillas y ropa de montaña, caminando, con una mochila de viaje en la espalda. Un ejemplo de dos amigos mochileros">
                 </a>
                 <h2>Amigos Viajeros</h2>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -64,44 +65,41 @@
 
         <h1 class="todosh1">Contactanos</h1>
 
-        <form class="backgroundContacto" action="">
-            <h2>Dejá tu comentario</h2>
-            <div class="form">
-                <label for="">Nombre y apellido:</label>
-                <input type="text">
-            </div>
+        <div class="container mb-5">
+            <form class="backgroundContacto row" action="">
 
-            <div class="form">
-                <label for="">Telefono:</label>
-                <input type="tel">
-            </div>
 
-            <div class="form">
-                <label for="">E-mail:</label>
-                <input type="email">
-            </div>
+                <div class="col-6">
+                    <label class="form-label" for="name">Nombre y Apellido</label>
+                    <input placeholder="Ej: Emanuel Almada" class="form-control form-control-lg" name="name" type="text" id="name">
+                </div>
 
-            <div class="form">
-                <label for="">Mensaje:</label>
-                <textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
-            </div>
+                <div class="col-6">
+                    <label for="emailInput" class="form-label">Email</label>
+                    <input type="email" class="form-control form-control-lg" id="emailInput" placeholder="Ej: Chalebambo@gmail.com">
 
-            <div class="buttons">
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
-            </div>
+                </div>
 
-        </form>
+                <div class="col-6">
+                    <label for="Telefono" class="form-label">Telefono</label>
+                    <input type="number" class="form-control form-control-lg" id="Telefono" placeholder="Ej: +54 3535648709">
+                </div>
 
-        <section class="sectionContacto">
-            <h3>Como podes ayudarnos?</h3>
-            <p>
-                Con tu donación, podemos seguir cumpliendo nuestro sueño de viajar! <br> <br>
-                C.B.U: 005456489722312 <br>
-                E-mail: emaalmada1@outlook.com <br>
-                Telefono: +54 9 353-5648709
-            </p>
-        </section>
+                <div class="col-6">
+                    <label class="form-label" for="Comentario">Contactanos</label>
+                    <textarea placeholder="Deje su comentario aquí" name="Comentario" id="Comentario" class="form-control form-control-lg" cols="40" rows="10"></textarea>
+                </div>
+
+                <div class="col-12">
+                <button type="submit" class="btn">
+                    Enviar
+                </button> 
+                <button type="submit" class="btn">Borrar</button>                 
+                </div>
+
+            </form>
+        </div>
+
     </main>
 
     <footer>
